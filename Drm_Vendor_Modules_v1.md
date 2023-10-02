@@ -14,7 +14,7 @@ The DRM and Crypto HALs interact with vendor-provided HAL implementations that h
 
 As an example, a DRM HAL implementation interacts with a DRM-specific license server to obtain licenses for decrypting content. The DRM HAL implementation generates a key request message, delivers it to the server and receives a key response message which is then loaded into the HAL. Once the keys are loaded, the Crypto HAL decryption functionality and performance and other associated APIs can be tested by the common VTS test suite, as shown in the following diagram.
 
-![Sequence](Google-VTS-SequenceDiag.png)
+![Sequence](Google-VTSSequence.png)
 
 ## The vendor-specific VTS module
 
