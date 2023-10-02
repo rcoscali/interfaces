@@ -10,7 +10,7 @@ This document describes DRM vendor-specific modules that support VTS testing of 
 
 The DRM and Crypto HALs interact with vendor-provided HAL implementations that have DRM-specific capabilities. Since the VTS tests cannot contain DRM-specific functionality, supporting modules are required to enable VTS to validate HAL implementations in a generic way. If the vendor-specific VTS module is not provided for a given drm HAL implementation, only very small subset of functionality can be verified.
 
-(Google-InterfaceDrmChallenge.png)[Challenge]
+[Google-InterfaceDrmChallenge.png|[Challenge])
 
 As an example, a DRM HAL implementation interacts with a DRM-specific license server to obtain licenses for decrypting content. The DRM HAL implementation generates a key request message, delivers it to the server and receives a key response message which is then loaded into the HAL. Once the keys are loaded, the Crypto HAL decryption functionality and performance and other associated APIs can be tested by the common VTS test suite, as shown in the following diagram.
 
